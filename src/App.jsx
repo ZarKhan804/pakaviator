@@ -9,9 +9,6 @@ import About from "./About/About";
 import Blog from "./Blog/Blog";
 import Contact from "./Contact/Contact";
 
-
-// ================= SCROLL TO TOP =================
-
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -26,30 +23,21 @@ const ScrollToTop = () => {
   return null;
 };
 
-
-// ================= APP =================
-
 const App = () => {
   return (
     <BrowserRouter>
-
       <ScrollToTop />
 
       <Header />
 
-      <main>
-        <Routes>
-
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-
-        </Routes>
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
 
       <Footer />
-
     </BrowserRouter>
   );
 };
