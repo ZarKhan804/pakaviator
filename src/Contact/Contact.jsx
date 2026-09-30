@@ -1,4 +1,4 @@
-import SEO from "../SEO";
+import SEO from "../SEO/SEO";
 import Hero from "./Hero";
 import Article from "./Article";
 import Keyword from "./Keyword";
