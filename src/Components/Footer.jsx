@@ -9,25 +9,35 @@ function Footer() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
+      left: 0,
       behavior: "smooth",
     });
   };
 
+  const internalLinks = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Blog", path: "/blog" },
+    { name: "Contact Us", path: "/contact" },
+  ];
+
   return (
     <footer className="bg-[#020617] text-white">
       {/* ================= TOP FOOTER ================= */}
-      <div className="mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-7xl px-6 py-10 sm:px-8 lg:px-10">
         <div className="grid gap-12 md:grid-cols-3 md:gap-10 lg:gap-16">
           {/* ================= BRAND ================= */}
-          <div className="md:col-span-1">
+          <div>
             <Link
               to="/"
-              className="inline-flex items-center gap-3"
               onClick={scrollToTop}
+              className="inline-flex items-center gap-3"
             >
               <img
                 src={LOGO_URL}
-                alt="Pak Aviator"
+                alt="Pak Aviator Logo"
+                width="56"
+                height="56"
                 className="h-14 w-14 rounded-xl object-contain"
               />
 
@@ -44,65 +54,36 @@ function Footer() {
 
             <p className="mt-6 max-w-xl text-[15px] leading-7 text-slate-400">
               Pak Aviator is an information website focused on the Aviator game.
-              Explore useful game information, guides, download guidance, and
-              helpful articles through a simple and user-friendly platform.
+              Explore useful game information, gaming guides, download guidance,
+              updates, and helpful articles through a simple and user-friendly
+              platform.
             </p>
           </div>
 
-          {/* ================= QUICK LINKS ================= */}
+          {/* ================= MAIN PAGES ================= */}
           <div>
             <h3 className="mb-7 text-lg font-extrabold uppercase tracking-wide text-blue-400">
-              Quick Links
+              Main Pages
             </h3>
 
             <div className="flex flex-col gap-5">
-              <Link
-                to="/"
-                onClick={scrollToTop}
-                className="w-fit text-[15px] text-slate-400 transition duration-300 hover:translate-x-1 hover:text-white"
-              >
-                Home
-              </Link>
-
-              <Link
-                to="/about"
-                onClick={scrollToTop}
-                className="w-fit text-[15px] text-slate-400 transition duration-300 hover:translate-x-1 hover:text-white"
-              >
-                About Us
-              </Link>
-
-              <Link
-                to="/blog"
-                onClick={scrollToTop}
-                className="w-fit text-[15px] text-slate-400 transition duration-300 hover:translate-x-1 hover:text-white"
-              >
-                Blog
-              </Link>
-
-              <Link
-                to="/contact"
-                onClick={scrollToTop}
-                className="w-fit text-[15px] text-slate-400 transition duration-300 hover:translate-x-1 hover:text-white"
-              >
-                Contact Us
-              </Link>
-
-              <a
-                href={DOWNLOAD_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-fit text-[15px] text-slate-400 transition duration-300 hover:translate-x-1 hover:text-white"
-              >
-                Download
-              </a>
+              {internalLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  onClick={scrollToTop}
+                  className="w-fit text-[15px] text-slate-400 transition duration-300 hover:translate-x-1 hover:text-white"
+                >
+                  {link.name}
+                </Link>
+              ))}
             </div>
           </div>
 
-          {/* ================= INFORMATION ================= */}
+          {/* ================= EXPLORE ================= */}
           <div>
             <h3 className="mb-7 text-lg font-extrabold uppercase tracking-wide text-blue-400">
-              Information
+              Explore
             </h3>
 
             <div className="flex flex-col gap-5">
@@ -127,16 +108,18 @@ function Footer() {
                 onClick={scrollToTop}
                 className="w-fit text-[15px] text-slate-400 transition duration-300 hover:translate-x-1 hover:text-white"
               >
-                Gaming Guide
+                Gaming Guides
               </Link>
 
-              <Link
-                to="/contact"
-                onClick={scrollToTop}
+              <a
+                href={DOWNLOAD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Download Pak Aviator Game"
                 className="w-fit text-[15px] text-slate-400 transition duration-300 hover:translate-x-1 hover:text-white"
               >
-                General Information
-              </Link>
+                Download Game
+              </a>
             </div>
           </div>
         </div>
@@ -144,29 +127,27 @@ function Footer() {
         {/* ================= DIVIDER ================= */}
         <div className="mt-12 border-t border-slate-800" />
 
-        {/* ================= BOTTOM FOOTER ================= */}
+        {/* ================= BOTTOM ================= */}
         <div className="flex flex-col gap-6 pt-6 md:flex-row md:items-center md:justify-between">
-          {/* COPYRIGHT */}
           <p className="text-sm text-slate-500">
             © {new Date().getFullYear()} Pak Aviator. All rights reserved.
           </p>
 
-          {/* BOTTOM LINKS */}
           <div className="flex flex-wrap items-center gap-6 text-sm">
             <Link
-              to="/"
+              to="/about"
               onClick={scrollToTop}
               className="text-slate-500 transition hover:text-white"
             >
-              Privacy Policy
+              About
             </Link>
 
             <Link
-              to="/"
+              to="/blog"
               onClick={scrollToTop}
               className="text-slate-500 transition hover:text-white"
             >
-              Terms & Conditions
+              Blog
             </Link>
 
             <Link
