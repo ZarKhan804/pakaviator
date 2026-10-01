@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://pakaviators.com/</loc>
+    <loc>https://www.pakaviators.com/</loc>
   </url>
-
   <url>
-    <loc>https://pakaviators.com/about</loc>
+    <loc>https://www.pakaviators.com/about</loc>
   </url>
-
   <url>
-    <loc>https://pakaviators.com/blog</loc>
+    <loc>https://www.pakaviators.com/blog</loc>
   </url>
-
   <url>
-    <loc>https://pakaviators.com/contact</loc>
+    <loc>https://www.pakaviators.com/contact</loc>
   </url>
-
 </urlset>
