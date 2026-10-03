@@ -23,7 +23,7 @@ function Contact() {
 
         <link
           rel="canonical"
-          href="https://pakaviators.com/contact/"
+          href="https://pakaviators.com/contact"
         />
       </Helmet>
 

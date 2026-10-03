@@ -22,7 +22,7 @@ function Download() {
 
         <link
           rel="canonical"
-          href="https://pakaviators.com/download/"
+          href="https://pakaviators.com/download"
         />
       </Helmet>
 
