@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pakaviators.com/sitemap.xml
+Sitemap: https://www.pakaviators.com/sitemap.xml

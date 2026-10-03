@@ -23,7 +23,7 @@ function About() {
 
         <link
           rel="canonical"
-          href="https://pakaviators.com/about"
+          href="https://www.pakaviators.com/about"
         />
       </Helmet>
 

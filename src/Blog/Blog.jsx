@@ -22,7 +22,7 @@ function Blog() {
 
         <link
           rel="canonical"
-          href="https://pakaviators.com/blog"
+          href="https://www.pakaviators.com/blog"
         />
       </Helmet>
 

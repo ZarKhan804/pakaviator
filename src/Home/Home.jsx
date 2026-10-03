@@ -23,7 +23,7 @@ function Home() {
 
         <link
           rel="canonical"
-          href="https://pakaviators.com/"
+          href="https://www.pakaviators.com/"
         />
       </Helmet>
 
