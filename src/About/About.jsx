@@ -12,7 +12,7 @@ function About() {
 
         <meta
           name="description"
-          content="Learn about Pak Aviator, its platform information, Aviator-style game features, mobile access, account guidance, and responsible gaming tips for users in Pakistan."
+          content="Learn about Pak Aviator, game features, mobile access, account guidance, and responsible gaming."
         />
 
         <meta
