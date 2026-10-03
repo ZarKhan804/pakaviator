@@ -1,15 +1,19 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
+// Common Components
+import Header from "./Component/Header";
+import Footer from "./Component/Footer";
 
+// Pages
 import Home from "./Home/Home";
 import About from "./About/About";
 import Blog from "./Blog/Blog";
 import Contact from "./Contact/Contact";
+import Download from "./Download/Download";
 
-const ScrollToTop = () => {
+// Scroll to top whenever the route changes
+function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -21,9 +25,9 @@ const ScrollToTop = () => {
   }, [pathname]);
 
   return null;
-};
+}
 
-const App = () => {
+function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
@@ -35,11 +39,12 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/download" element={<Download />} />
       </Routes>
 
       <Footer />
     </BrowserRouter>
   );
-};
+}
 
 export default App;

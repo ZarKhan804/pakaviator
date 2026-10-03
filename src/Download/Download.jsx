@@ -1,19 +1,18 @@
 
 import { Helmet } from "react-helmet-async";
-import ContactHero from "./ContactHero";
-import ContactForm from "./ContactForm";
+import DownloadHero from "./DownloadHero";
 import InternalLinksArticle from "./InternalLinksArticle";
 import Article from "./Article";
 
-function Contact() {
+function Download() {
   return (
     <>
       <Helmet>
-        <title>Contact Pak Aviator | Support & Assistance</title>
+        <title>Pak Aviator Download Guide in Pakistan | Pak Aviators</title>
 
         <meta
           name="description"
-          content="Contact Pak Aviator for general questions, feedback, account guidance, platform information, and assistance with game-related queries."
+          content="Explore the Pak Aviator download guide, compatible device information, mobile access, account safety, platform features, and responsible gaming resources."
         />
 
         <meta
@@ -23,13 +22,12 @@ function Contact() {
 
         <link
           rel="canonical"
-          href="https://pakaviators.com/contact/"
+          href="https://pakaviators.com/download/"
         />
       </Helmet>
 
       <main>
-        <ContactHero />
-        <ContactForm />
+        <DownloadHero />
         <InternalLinksArticle />
         <Article />
       </main>
@@ -37,5 +35,5 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Download;
 

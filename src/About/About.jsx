@@ -1,22 +1,39 @@
-import SEO from "../SEO/SEO";
-import Hero from "./Hero";
-import Article from "./Article";
-import Keyword from "./Keyword";
+
+import { Helmet } from "react-helmet-async";
+import AboutHero from "./AboutHero";
+import AboutContent from "./AboutContent";
+import InternalLinksArticle from "./InternalLinksArticle";
 
 function About() {
   return (
     <>
-      <SEO
-        title="About Pak Aviator – Aviator Game Information & Guides"
-        description="Learn more about Pak Aviator, our gaming information website, Aviator game resources, mobile access, download guidance, useful guides, and gaming articles."
-        canonical="https://www.pakaviators.com/about"
-      />
+      <Helmet>
+        <title>About Pak Aviator | Platform Information & Game Guide</title>
 
-      <Hero />
-      <Article />
-      <Keyword />
+        <meta
+          name="description"
+          content="Learn about Pak Aviator, its platform information, Aviator-style game features, mobile access, account guidance, and responsible gaming tips for users in Pakistan."
+        />
+
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large"
+        />
+
+        <link
+          rel="canonical"
+          href="https://pakaviators.com/about/"
+        />
+      </Helmet>
+
+      <main>
+        <AboutHero />
+        <AboutContent />
+        <InternalLinksArticle />
+      </main>
     </>
   );
 }
 
 export default About;
+

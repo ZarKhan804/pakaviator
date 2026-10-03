@@ -1,22 +1,39 @@
-import SEO from "../SEO/SEO";
-import Hero from "./Hero";
-import Article from "./Article";
-import Keyword from "./Keyword";
+
+import { Helmet } from "react-helmet-async";
+import BlogHero from "./BlogHero";
+import BlogPosts from "./BlogPosts";
+import InternalLinksArticle from "./InternalLinksArticle";
 
 function Blog() {
   return (
     <>
-      <SEO
-        title="Pak Aviator Blog – Aviator Game News, Guides & Updates"
-        description="Read the Pak Aviator Blog for useful Aviator game information, gaming guides, mobile gaming topics, platform updates, and helpful articles."
-        canonical="https://www.pakaviators.com/blog"
-      />
+      <Helmet>
+        <title>Pak Aviator Blog | Game Guides & Information</title>
 
-      <Hero />
-      <Article />
-      <Keyword />
+        <meta
+          name="description"
+          content="Explore Pak Aviator game guides, Aviator-style gameplay information, mobile access tips, account security, platform features, and responsible gaming resources."
+        />
+
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large"
+        />
+
+        <link
+          rel="canonical"
+          href="https://pakaviators.com/blog/"
+        />
+      </Helmet>
+
+      <main>
+        <BlogHero />
+        <BlogPosts />
+        <InternalLinksArticle />
+      </main>
     </>
   );
 }
 
 export default Blog;
+
