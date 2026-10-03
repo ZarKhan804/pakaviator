@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet-async";
 import ContactHero from "./ContactHero";
 import ContactForm from "./ContactForm";
@@ -25,6 +24,12 @@ function Contact() {
           rel="canonical"
           href="https://www.pakaviators.com/contact"
         />
+
+        <meta property="og:url" content="https://www.pakaviators.com/contact" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact Pak Aviator | Support & Assistance" />
+        <meta property="og:description" content="Contact Pak Aviator for general questions, feedback, account guidance, platform information, and assistance with game-related queries." />
+        <meta property="og:site_name" content="Pak Aviators" />
       </Helmet>
 
       <main>
@@ -38,4 +43,3 @@ function Contact() {
 }
 
 export default Contact;
-
