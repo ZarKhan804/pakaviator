@@ -8,27 +8,19 @@ function Download() {
     <>
       <Helmet>
         <title>Pak Aviator Download Guide in Pakistan | Pak Aviators</title>
-
         <meta
           name="description"
           content="Explore the Pak Aviator download guide, compatible device information, mobile access, account safety, platform features, and responsible gaming resources."
         />
-
         <meta
           name="robots"
           content="index, follow, max-image-preview:large"
         />
-
         <link
           rel="canonical"
           href="https://www.pakaviators.com/download"
         />
-
         <meta property="og:url" content="https://www.pakaviators.com/download" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Pak Aviator Download Guide in Pakistan | Pak Aviators" />
-        <meta property="og:description" content="Explore the Pak Aviator download guide, compatible device information, mobile access, account safety, platform features, and responsible gaming resources." />
-        <meta property="og:site_name" content="Pak Aviators" />
       </Helmet>
 
       <main>

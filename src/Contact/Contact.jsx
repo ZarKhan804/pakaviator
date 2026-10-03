@@ -9,27 +9,19 @@ function Contact() {
     <>
       <Helmet>
         <title>Contact Pak Aviator | Support & Assistance</title>
-
         <meta
           name="description"
           content="Contact Pak Aviator for general questions, feedback, account guidance, platform information, and assistance with game-related queries."
         />
-
         <meta
           name="robots"
           content="index, follow, max-image-preview:large"
         />
-
         <link
           rel="canonical"
           href="https://www.pakaviators.com/contact"
         />
-
         <meta property="og:url" content="https://www.pakaviators.com/contact" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contact Pak Aviator | Support & Assistance" />
-        <meta property="og:description" content="Contact Pak Aviator for general questions, feedback, account guidance, platform information, and assistance with game-related queries." />
-        <meta property="og:site_name" content="Pak Aviators" />
       </Helmet>
 
       <main>
