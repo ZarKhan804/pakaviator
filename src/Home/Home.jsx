@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import GameSection from "./GameSection";
 import ContentSection from "./ContentSection";
 import InternalLinksArticle from "./InternalLinksArticle";
+import Answer from "./Answer";
 
 function Home() {
   return (
@@ -29,6 +30,7 @@ function Home() {
         <GameSection />
         <ContentSection />
         <InternalLinksArticle />
+        <Answer/>
       </main>
     </>
   );

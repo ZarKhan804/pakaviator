@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import DownloadHero from "./DownloadHero";
 import InternalLinksArticle from "./InternalLinksArticle";
 import Article from "./Article";
+import Answer from "./Answer";
 
 function Download() {
   return (
@@ -27,6 +28,7 @@ function Download() {
         <DownloadHero />
         <InternalLinksArticle />
         <Article />
+        <Answer/>
       </main>
     </>
   );

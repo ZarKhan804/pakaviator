@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import AboutHero from "./AboutHero";
 import AboutContent from "./AboutContent";
 import InternalLinksArticle from "./InternalLinksArticle";
+import Answer from "./Answer";
 
 function About() {
   return (
@@ -27,6 +28,7 @@ function About() {
         <AboutHero />
         <AboutContent />
         <InternalLinksArticle />
+        <Answer/>
       </main>
     </>
   );

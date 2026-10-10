@@ -78,7 +78,7 @@ function HeroSection() {
               aria-label="Visit Pak Aviator game platform"
               className="inline-flex min-w-[190px] items-center justify-center rounded-xl bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-500 px-7 py-3.5 text-sm font-extrabold text-gray-900 shadow-lg shadow-yellow-500/25 transition duration-300 hover:-translate-y-1 hover:shadow-yellow-500/40"
             >
-              Play Pak Aviator
+              Download Now
             </a>
 
             {/* ABOUT BUTTON */}
